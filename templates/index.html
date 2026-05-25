@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RankForge</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            RankForge
+        </div>
+
+        <ul>
+            <li><a href="#games-section">Games</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Codes</a></li>
+            <li><a href="#">Tier Lists</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+
+        <h1>Gaming Guides, Builds & Secrets</h1>
+
+        <p>
+            Discover maps, chest locations, secrets, tier lists and strategies.
+        </p>
+
+        <a href="#games-section" class="explore-btn">
+            Explore Games
+        </a>
+
+    </section>
+    <section class="games" id="games-section">
+
+        <h2>Featured Games</h2>
+
+        <div class="slider">
+
+    <button class="arrow">❮</button>
+
+    <div class="cards-wrapper">
+
+        <div class="game-card">
+
+            <img src="{{ url_for('static', filename='images/nofilter.jpg') }}" alt="Wizard Alchemy">
+
+            <div class="card-content">
+
+                <h3>Wizard Alchemy</h3>
+
+                <p>Explore guides, chest locations and secrets.</p>
+
+                <button class="view-btn">Ver más</button>
+
+            </div>
+
+        </div>
+
+        <div class="game-card coming">
+
+            <div class="coming-content">
+
+                <h3>Coming Soon</h3>
+
+                <p>More games will arrive soon.</p>
+
+                <button class="view-btn">Ver más</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="arrow">❯</button>
+
+    </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h3>RankForge</h3>
+
+            <p>Gaming guides, tier lists and secrets for competitive games.</p>
+
+            <div class="footer-links">
+                <a href="#">Games</a>
+                <a href="#">Codes</a>
+                <a href="#">Tier Lists</a>
+            </div>
+
+            <span>© 2026 RankForge. All rights reserved.</span>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
