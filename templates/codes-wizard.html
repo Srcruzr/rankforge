@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard Alchemy Codes (May 2026) - Active Codes & Rewards</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/guides-wizard.css') }}">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+    {% include 'components/navbar.html' %}
+
+    <!-- CONTENIDO -->
+
+    <section class="guide-layout">
+
+        <!-- SIDEBAR -->
+
+            {% include 'components/guide-sidebar.html' %}
+
+        <!-- CONTENIDO PRINCIPAL -->
+
+        <div class="guide-content">
+
+            <h2>Wizard Alchemy Codes - Active Codes and Rewards</h2>
+
+            <p>
+                Última actualización: Mayo 2026.
+            </p>
+
+            <p>
+                Los códigos son recompensas gratuitas creadas por los desarrolladores
+                del juego. Estos códigos pueden otorgar monedas, materiales,
+                pociones, experiencia y otros beneficios importantes para progresar
+                más rápido dentro de <strong>Wizard Alchemy</strong>. 
+            </p>
+
+            <p>
+                Normalmente los códigos aparecen durante actualizaciones,
+                eventos especiales o cuando el juego alcanza cierta cantidad
+                de jugadores o visitas.
+            </p>
+
+            <h3>¿Cómo canjear códigos?</h3>
+
+            <p>
+                Para canjear códigos debes abrir la configuración del juego
+                desde la tuerca ubicada en la parte superior derecha.
+                Luego busca la sección de códigos e ingresa el código exactamente
+                como aparece aquí.
+            </p>
+
+                <img src="{{ url_for('static', filename='images/guides/configuracion.png') }}" alt="">
+
+            <h3>Códigos disponibles</h3>
+
+            <ul class="guide-list">
+
+                <li><strong>17kCCU</strong> </li>
+
+                <li><strong>SPELL</strong></li>
+
+                <li><strong>20kMembers</strong></li>
+
+                <li><strong>BREW</strong></li>
+
+                <li><strong>Broom</strong></li>
+
+                <li><strong>NewWorld</strong></li>
+
+                <li><strong>60KMEMBERS!</strong></li>
+                
+                <li><strong>40KCCU!</strong></li>
+
+                <li><strong>UPDATE1!</strong></li>
+
+                <li><strong>DRUID</strong></li>
+
+                <li><strong>SUMMON</strong></li>
+
+                <li><strong>80KMEMBERS</strong></li>
+
+            </ul>
+
+            <h3>Consejos importantes</h3>
+
+            <ul class="guide-list">
+
+                <li>Los códigos pueden expirar en cualquier momento.</li>
+
+                <li>Escribe los códigos exactamente igual.</li>
+
+                <li>Algunos códigos solo funcionan una vez.</li>
+
+                <li>Los desarrolladores agregan nuevos códigos en actualizaciones.</li>
+
+            </ul>
+
+            </div>
+
+            <!-- ADS -->
+
+            {% include 'components/ads.html' %}
+
+    </section>
+
+    <!-- FOOTER -->
+
+    {% include 'components/footer.html' %}
+
+    <!-- MODAL DE IMAGEN -->
+
+    <div class="image-modal" id="imageModal">
+
+        <span class="close-modal">&times;</span>
+
+        <img class="modal-content" id="modalImage">
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/image-modal.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/sidebar.js') }}"></script>
+
+</body>
+</html>

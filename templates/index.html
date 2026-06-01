@@ -15,10 +15,8 @@
         </div>
 
         <ul>
-            <li><a href="#games-section">Games</a></li>
-            <li><a href="#">Trending</a></li>
-            <li><a href="#">Codes</a></li>
-            <li><a href="#">Tier Lists</a></li>
+            <li><a href="#games-section">Guides</a></li>
+
         </ul>
     </nav>
 
@@ -47,7 +45,7 @@
 
         <div class="game-card">
 
-            <img src="{{ url_for('static', filename='images/wizard.jpg') }}" alt="Wizard Alchemy">
+            <img src="{{ url_for('static', filename='images/index/wizard.jpg') }}" alt="Wizard Alchemy">
 
             <div class="card-content">
 
@@ -55,7 +53,7 @@
 
                 <p>Explore guides, chest locations and secrets.</p>
 
-                <button class="view-btn">Ver más</button>
+                <a href="/guides-wizard" class="view-btn">Ver más</a>
 
             </div>
 

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía para Principiantes de Wizard Alchemy | Misiones, Pociones y Consejos</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/guides-wizard.css') }}">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+    {% include 'components/navbar.html' %}
+
+    <!-- CONTENIDO -->
+
+        <section class="guide-layout">
+
+            <!-- SIDEBAR -->
+            {% include 'components/guide-sidebar.html' %}
+
+        <!-- CONTENIDO PRINCIPAL -->
+
+        <div class="guide-content">
+
+            <h2>Guía para Principiantes</h2>
+
+            <p>
+                Al comenzar en Wizard Alchemy debes enfocarte primero
+                en conseguir recursos básicos y desbloquear habilidades.
+            </p>
+
+            <p>
+                Evita gastar monedas al inicio, ya que muchos objetos importantes
+                se compran con la moneda del juego. También explora todas las zonas
+                cercanas para encontrar cofres escondidos.
+            </p>
+
+            <p>
+                Además, contamos con una guía especial para cada uno de los secretos,
+                cofres y otros objetos ocultos.
+            </p>
+
+            <img src="{{ url_for('static', filename='images/index/wizard.jpg') }}" alt="">
+
+            <h3>Primeros pasos</h3>
+
+            <p>
+                Primero debes conocer cada una de las interfaces del juego,
+                cómo utilizarlas, cómo funcionan y qué beneficios ofrecen.
+            </p>
+
+            <ul class="guide-list">
+
+                <li>Bolsa</li>
+
+                <p>
+                    Se encuentra dentro de tu inventario de Roblox. Aquí podrás
+                    acceder a varios datos y objetos importantes de tu personaje.
+                </p>
+
+                <img src="{{ url_for('static', filename='images/guides/inventario.png') }}" alt="">
+
+                <p>
+                    En la bolsa encontrarás las pociones que tienes disponibles
+                    o que hayas creado, materiales recolectados, equipamiento,
+                    escobas, calderos y propiedades especiales.
+                </p>
+
+                <li>Estadísticas</li>
+
+                <p>
+                    Aquí encontrarás todas las estadísticas de tu personaje,
+                    las cuales puedes mejorar a medida que subes de nivel.
+                </p>
+
+                <img src="{{ url_for('static', filename='images/guides/inventario.png') }}" alt="">
+
+                <p>
+                    Ten en cuenta que por cada nivel obtienes un punto para
+                    aumentar una sola estadística.
+                </p>
+
+                <p>
+                    También existe el sistema de Ascensión, donde puedes subir
+                    de rango dependiendo de tu nivel como mago. Este nivel aumenta
+                    utilizando golpes y hechizos.
+                </p>
+
+                <img src="{{ url_for('static', filename='images/guides/ascension.png') }}" alt="">
+
+                <p>
+                    Además, necesitarás oro para ascender. Cuanto más alto sea
+                    tu rango, mayor será el nivel y la cantidad de oro requerida.
+                </p>
+
+                <p>
+                    Por último, tenemos la raza de tu personaje. Cada raza posee
+                    estadísticas diferentes y, normalmente, mientras más rara sea,
+                    mejores beneficios ofrece.
+                </p>
+
+                <div class="guide-images">
+
+                    <img src="{{ url_for('static', filename='images/guides/hub-raza.png') }}" alt="">
+
+                    <img src="{{ url_for('static', filename='images/guides/raza.png') }}" alt="">
+
+                </div>
+
+                <li>Índice</li>
+
+                <p>
+                    En el índice se encuentra todo lo que has descubierto,
+                    como pociones, materiales, enemigos y otros objetos.
+                </p>
+
+                <div class="guide-images">
+
+                    <img src="{{ url_for('static', filename='images/guides/indice1.png') }}" alt="">
+
+                    <img src="{{ url_for('static', filename='images/guides/indice2.png') }}" alt="">
+
+                </div>
+
+                <p>
+                    Si aún no has descubierto algún objeto,
+                    este no aparecerá en el índice.
+                </p>
+
+                <li>Configuración</li>
+
+                <p>
+                    Aquí puedes cambiar la configuración de gráficos,
+                    controles, utilidades y otras opciones del juego.
+                </p>
+
+                <img src="{{ url_for('static', filename='images/guides/configuracion.png') }}" alt="">
+
+                <p>
+                    Puedes acceder a esta sección desde la tuerca ubicada
+                    en la parte superior derecha de la pantalla.
+                </p>
+
+                <p>
+                    Además, aquí encontrarás una de las funciones más importantes:
+                    el sistema de códigos. Estos códigos pueden darte recompensas
+                    y beneficios muy útiles dentro del juego.
+                </p>
+
+                <p>
+                    Tenemos una guía especial con todos los códigos disponibles.
+                </p>
+
+            </ul>
+
+            <h4>Misiones iniciales</h4>
+
+            <p>
+                Completa las misiones iniciales. Siempre puedes repetirlas
+                para seguir obteniendo los mismos recursos. Estas misiones
+                se encuentran con <strong>Harryint</strong>.
+            </p>
+
+            <div class="guide-images">
+
+                <img src="{{ url_for('static', filename='images/guides/misiones1.png') }}" alt="">
+
+                <img src="{{ url_for('static', filename='images/guides/misiones2.png') }}" alt="">
+
+            </div>
+
+            <p>
+                Cada una de estas misiones ofrece recompensas diferentes
+                dependiendo de su dificultad. La dificultad cambia según
+                los enemigos a los que te enfrentes.
+            </p>
+
+            <h4>Ingredientes para realizar alquimia</h4>
+
+            <p>
+                En el mapa encontrarás distintos tipos de ingredientes
+                necesarios para crear pociones. Estos objetos tienen
+                brillos dorados que indican que pueden recogerse.
+            </p>
+
+            <div class="guide-images">
+
+                <img src="{{ url_for('static', filename='images/guides/ingredientes1.png') }}" alt="">
+
+                <img src="{{ url_for('static', filename='images/guides/ingredientes2.png') }}" alt="">
+
+            </div>
+
+            <p>
+                Cada uno de los ingredientes tiene un poder mágico distinto
+                que ayudará a crear pociones mejores o peores.
+            </p>
+
+            <h4>Puntos importantes del mapa</h4>
+
+            <p>
+                Existen varios puntos importantes en el mapa que ayudarán
+                durante la aventura, la creación de pociones, la venta
+                y compra de objetos, así como la refinación de pociones.
+            </p>
+
+            <ul class="guide-list">
+
+                <li>Punto de venta</li>
+
+                <p>
+                    En este punto puedes vender pociones y materiales.
+                    Aquí tenemos un truco que puede darte beneficios
+                    importantes durante la aventura.
+                </p>
+
+                <div class="guide-images">
+
+                    <img src="{{ url_for('static', filename='images/guides/venta.png') }}" alt="">
+
+                    <img src="{{ url_for('static', filename='images/guides/venta-hub.png') }}" alt="">
+
+                </div>
+
+                <p>
+                    Es mejor vender pociones que materiales, ya que las pociones
+                    generan más monedas para comprar otros objetos.
+                </p>
+
+                <li>Punto de compra</li>
+
+                <p>
+                    En este punto puedes comprar varios objetos que aumentan
+                    las estadísticas de tu personaje.
+                </p>
+
+                <div class="guide-images">
+
+                    <img src="{{ url_for('static', filename='images/guides/tienda.png') }}" alt="">
+
+                    <img src="{{ url_for('static', filename='images/guides/tienda-hub.png') }}" alt="">
+
+                </div>
+
+                <p>
+                    Puedes comprar varas, sombreros de mago, túnicas y otros
+                    objetos. Generalmente, cuanto mayor sea el precio,
+                    mejor será el equipamiento.
+                </p>
+
+                <li>Punto de pociones</li>
+
+                <p>
+                    Este es uno de los puntos más utilizados, ya que aquí
+                    podrás fabricar diferentes tipos de pociones.
+                </p>
+
+                <div class="guide-images">
+
+                    <img src="{{ url_for('static', filename='images/guides/pociones.png') }}" alt="">
+
+                    <img src="{{ url_for('static', filename='images/guides/pociones-hub.png') }}" alt="">
+
+                </div>
+
+                <p>
+                    Cuanto mejores sean los materiales, más poderosas serán
+                    las pociones que fabriques. Cada material posee un nivel
+                    de magia diferente.
+                </p>
+
+                <li>Punto de refinación</li>
+
+                <p>
+                    En este punto puedes refinar tus pociones para obtener
+                    estadísticas mucho más altas.
+                </p>
+
+                <div class="guide-images">
+
+                    <img src="{{ url_for('static', filename='images/guides/refinacion.png') }}" alt="">
+
+                    <img src="{{ url_for('static', filename='images/guides/refinacion-hub.png') }}" alt="">
+
+                </div>
+
+                <p>
+                    Debes refinar tres pociones del mismo tipo para conseguir
+                    un Tier S. Para obtener un Tier SS necesitarás cuatro
+                    pociones Tier S y, finalmente, para conseguir un Tier SSS
+                    necesitarás cinco pociones Tier SS.
+                </p>
+
+            </ul>
+
+            <h3>Consejos importantes</h3>
+
+            <ul class="guide-list">
+
+                <li>No gastes oro al inicio.</li>
+
+                <li>No vendas las pociones rápidamente; primero refínalas.</li>
+
+                <li>Evita enemigos fuertes en las primeras etapas.</li>
+
+                <li>Recoge todos los materiales que puedas.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- ADS -->
+
+        {% include 'components/ads.html' %}
+
+    </section>
+
+    <!-- FOOTER -->
+
+    {% include 'components/footer.html' %}
+
+    <!-- MODAL DE IMAGEN -->
+
+    <div class="image-modal" id="imageModal">
+
+        <span class="close-modal">&times;</span>
+
+        <img class="modal-content" id="modalImage">
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/image-modal.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/sidebar.js') }}"></script>
+
+</body>
+</html>

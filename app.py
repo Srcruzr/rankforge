@@ -6,5 +6,17 @@ app = Flask(__name__, static_folder="static", static_url_path="/static")
 def home():
     return render_template("index.html")
 
+@app.route("/guides-wizard")
+def guides_wizard():
+    return render_template("guides-wizard.html")
+
+@app.route("/codes-wizard")
+def codes_wizard():
+    return render_template("codes-wizard.html")
+
+@app.route("/pociones-departure-isle.html")
+def pociones_departure_isle():
+    return render_template("pociones-departure-isle.html")
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
+    app.run(host="0.0.0.0", port=10000, debug=True)

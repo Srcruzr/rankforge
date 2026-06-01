@@ -180,16 +180,16 @@ nav a:hover{
 /* BUTTON */
 
 .view-btn{
-    margin-top:10px;
+    display:inline-block;
+    text-decoration:none;
 
     padding:10px;
-
-    border:none;
     border-radius:10px;
 
     background:#7c4dff;
     color:white;
 
+    text-align:center;
     cursor:pointer;
 
     transition:0.3s;
